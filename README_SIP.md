@@ -72,7 +72,7 @@ User (Natural Language)
 - Event-Driven Triggers
 
 **AI Layer**
-- OpenAI GPT-4 for natural language processing
+- Google Gemini for natural language processing
 - Intent recognition and parameter extraction
 - Portfolio optimization algorithms
 - Risk assessment models
@@ -96,7 +96,7 @@ Node.js >= v18.18
 Foundry
 MetaMask
 REACT tokens
-OpenAI API Key
+- Google Gemini API Key
 ```
 
 ### Installation

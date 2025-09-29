@@ -26,7 +26,7 @@ Your ReactiveSIP project has been upgraded from a simple FlashLoan protocol to a
 ### 2. AI Agent Backend
 
 **Complete AI-powered backend with:**
-- Natural language processing (OpenAI GPT-4)
+- Natural language processing (Google Gemini)
 - Intent recognition and parameter extraction
 - Automated SIP execution monitoring
 - Portfolio optimization algorithms

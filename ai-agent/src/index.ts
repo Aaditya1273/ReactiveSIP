@@ -26,8 +26,8 @@ const blockchainService = new BlockchainService({
 });
 
 const aiService = new AIService({
-  openaiApiKey: process.env.OPENAI_API_KEY!,
-  model: 'gpt-4-turbo-preview'
+  geminiApiKey: process.env.GEMINI_API_KEY!,
+  model: process.env.GEMINI_MODEL || 'gemini-pro'
 });
 
 const sipAgent = new SIPAgent(blockchainService, aiService);

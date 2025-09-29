@@ -8,7 +8,7 @@ Complete guide to deploy ReactiveSIP - Autonomous DeFi Yield Engine on Reactive 
 - Foundry (for smart contracts)
 - MetaMask wallet
 - REACT tokens on Reactive Mainnet
-- OpenAI API Key (for AI agent)
+- Google Gemini API Key (for AI agent)
 
 ## 🌐 Network Configuration
 
@@ -68,7 +68,8 @@ cp .env.example .env
 # Edit .env with your values
 REACTIVE_RPC_URL=https://mainnet-rpc.rnk.dev/
 REACTIVE_CHAIN_ID=1597
-OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_MODEL=gemini-pro
 AI_AGENT_PRIVATE_KEY=your_private_key_here
 PORT=3001
 ```
