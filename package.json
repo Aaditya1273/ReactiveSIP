@@ -1,0 +1,34 @@
+{
+  "name": "reactivesip",
+  "version": "1.0.0",
+  "description": "Autonomous DeFi Yield Engine on Reactive Network",
+  "scripts": {
+    "install:all": "npm run install:frontend && npm run install:agent",
+    "install:frontend": "cd frontend && npm install",
+    "install:agent": "cd ai-agent && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:agent": "cd ai-agent && npm run dev",
+    "dev": "concurrently \"npm run dev:agent\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "build:agent": "cd ai-agent && npm run build",
+    "build": "npm run build:agent && npm run build:frontend",
+    "start:agent": "cd ai-agent && npm start",
+    "start:frontend": "cd frontend && npm run preview",
+    "deploy:contracts": "cd contract && forge script script/DeploySIP.s.sol:DeploySIP --rpc-url $REACTIVE_RPC --broadcast --legacy",
+    "test:contracts": "cd contract && forge test"
+  },
+  "keywords": [
+    "defi",
+    "sip",
+    "reactive-network",
+    "ai",
+    "blockchain",
+    "yield",
+    "automation"
+  ],
+  "author": "ReactiveSIP Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

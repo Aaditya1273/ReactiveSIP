@@ -1,0 +1,42 @@
+{
+  "name": "reactivesip-ai-agent",
+  "version": "1.0.0",
+  "description": "AI Agent for Autonomous SIP Management on Reactive Network",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@ai16z/eliza": "^0.1.0",
+    "ethers": "^6.9.0",
+    "openai": "^4.20.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "ws": "^8.14.2",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/ws": "^8.5.10",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "jest": "^29.7.0"
+  },
+  "keywords": [
+    "defi",
+    "sip",
+    "ai",
+    "reactive-network",
+    "blockchain",
+    "automation"
+  ],
+  "author": "ReactiveSIP Team",
+  "license": "MIT"
+}

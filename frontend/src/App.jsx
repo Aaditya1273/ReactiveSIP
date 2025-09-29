@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import SIPDashboard from "./Pages/SIPDashboard";
 import Navbar from "./Components/Navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/sip" element={<SIPDashboard />}></Route>
         </Routes>
         <ToastContainer />
       </BrowserRouter>
