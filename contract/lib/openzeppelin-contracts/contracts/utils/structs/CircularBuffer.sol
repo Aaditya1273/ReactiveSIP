@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v5.1.0) (utils/structs/CircularBuffer.sol)
+// OpenZeppelin Contracts (last updated v5.3.0) (utils/structs/CircularBuffer.sol)
 pragma solidity ^0.8.20;
 
 import {Math} from "../math/Math.sol";
@@ -21,7 +21,7 @@ import {Panic} from "../Panic.sol";
  * - inclusion ({includes}): O(N) (worst case)
  * - reset ({clear}): O(1)
  *
- * * The struct is called `Bytes32CircularBuffer`. Other types can be cast to and from `bytes32`. This data structure
+ * The struct is called `Bytes32CircularBuffer`. Other types can be cast to and from `bytes32`. This data structure
  * can only be used in storage, and not in memory.
  *
  * Example usage:
@@ -62,7 +62,7 @@ library CircularBuffer {
     }
 
     /**
-     * @dev Initialize a new CircularBuffer of given size.
+     * @dev Initialize a new CircularBuffer of a given size.
      *
      * If the CircularBuffer was already setup and used, calling that function again will reset it to a blank state.
      *

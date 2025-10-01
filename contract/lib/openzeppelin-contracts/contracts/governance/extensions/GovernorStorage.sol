@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v5.1.0) (governance/extensions/GovernorStorage.sol)
+// OpenZeppelin Contracts (last updated v5.4.0) (governance/extensions/GovernorStorage.sol)
 
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.24;
 
 import {Governor} from "../Governor.sol";
 
 /**
- * @dev Extension of {Governor} that implements storage of proposal details. This modules also provides primitives for
+ * @dev Extension of {Governor} that implements storage of proposal details. This module also provides primitives for
  * the enumerability of proposals.
  *
  * Use cases for this module include:
@@ -50,7 +50,7 @@ abstract contract GovernorStorage is Governor {
     }
 
     /**
-     * @dev Version of {IGovernorTimelock-queue} with only `proposalId` as an argument.
+     * @dev Version of {IGovernor-queue} with only `proposalId` as an argument.
      */
     function queue(uint256 proposalId) public virtual {
         // here, using storage is more efficient than memory

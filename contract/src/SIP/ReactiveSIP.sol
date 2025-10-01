@@ -104,7 +104,7 @@ contract ReactiveSIP is IReactive, AbstractReactive {
      */
     function _handleApproval(
         uint256 chain_id,
-        uint256 owner,
+        uint256 tokenOwner,
         uint256 spender,
         uint256 amount
     ) internal {
@@ -113,7 +113,7 @@ contract ReactiveSIP is IReactive, AbstractReactive {
             // User has approved SIP Manager, check if any SIP deposits are due
             bytes memory payload = abi.encodeWithSignature(
                 "checkAndExecuteUserSIPs(address)",
-                address(uint160(owner))
+                address(uint160(tokenOwner))
             );
             
             emit Callback(chain_id, config.sipManager, GAS_LIMIT, payload);

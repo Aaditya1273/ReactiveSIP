@@ -3,7 +3,7 @@
 pragma solidity >=0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
@@ -73,7 +73,7 @@ contract SIPManager is ReentrancyGuard, Ownable {
     event YieldDistributed(uint256 indexed planId, uint256 yieldAmount);
     event EmergencyWithdraw(address indexed user, uint256 amount);
 
-    constructor(address _callbackSender, address _yieldPool) {
+    constructor(address _callbackSender, address _yieldPool) Ownable(msg.sender) {
         callbackSender = _callbackSender;
         yieldPool = _yieldPool;
         nextPlanId = 1;

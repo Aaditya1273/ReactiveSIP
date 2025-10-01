@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+ai-agent/node_modules/
+frontend/node_modules/
+
+# Solidity build artifacts
+contract/out/
+contract/cache/
+contract/broadcast/
+contract/lib/
+
+# Frontend build output
+frontend/dist/
+
+# AI agent build output
+ai-agent/dist/
+
+# Environment files
+*.env
+!.env.example
+contract/.env
+aio-agent/.env
+frontend/.env
+
+# Logs
+*.log
+logs/
