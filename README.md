@@ -1,6 +1,6 @@
-# 🚀 ReactiveSIP - Autonomous DeFi Yield Engine
+# 🚀 ReactiveSIP - Autonomous DeFi Yield Engine:
 
-## Overview:
+## Overview
 
 **ReactiveSIP** is the world's first AI-powered Systematic Investment Plan (SIP) platform built on Reactive Network. It combines the innovative **Non-Locking FlashLoan Protocol** with autonomous AI-driven investment management, creating a comprehensive DeFi ecosystem where users can:
 
